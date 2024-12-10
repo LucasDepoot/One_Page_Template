@@ -1,0 +1,19 @@
+{
+    "entreprise":"Nom d'entreprise",
+    "mail":"mail@entreprise.fr",
+    "mailImage":"./envelope-line-icon.png",
+    "phone":"06 06 06 06 06",
+    "phoneImage":"./phone-line-icon.png",
+    "social": 
+        [
+            {
+                "link":"https://linkedin.com",
+                "image":"./black-instagram-icon.png"
+            },
+            {
+                "link":"https://facebook.fr",
+                "image":"./facebook-app-round-icon.png"
+            }
+        ],
+    "logo":"./placeholder.jpg"
+}
