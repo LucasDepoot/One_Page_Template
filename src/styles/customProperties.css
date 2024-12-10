@@ -1,4 +1,9 @@
 :root{
---picture-tall-background:url('/backgroundPlaceholder.jpg');
---picture-small-background:url('/placeholder.jpg');
+    --color-background-header:rgba(255, 255, 255, 0.459);
+    --picture-tall-background:url('/backgroundPlaceholder.jpg');
+    --picture-small-background:url('/backgroundPlaceholder.jpg');
+    --hero-tall-top:55vh;
+    --hero-tall-left:65vw;
+    --hero-small-top:62vh;
+    --hero-small-left:50%;
 }

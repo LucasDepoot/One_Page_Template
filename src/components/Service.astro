@@ -1,0 +1,36 @@
+---
+import data from "../datas/service.json";
+---
+<section>
+    <h2>Nos Prestations</h2>
+    <div class="services">
+        {data.map((i)=>(
+            <div class="card">
+                <img loading="lazy" src={i.image} alt={i.imageAlt} width="150px"/>
+                <h3>{i.title}</h3>
+                <p>{i.description}</p>
+            </div>
+        ))}
+    </div>
+</section>
+<style>
+    .services{
+        width: 80%;
+        gap: 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid slateblue;
+        text-align: center;
+        width: 20%;
+        padding: 2rem;
+    }
+    img{
+        margin: auto;
+        border-radius: 50%;
+    }
+</style>

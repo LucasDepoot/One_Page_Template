@@ -1,15 +1,18 @@
 ---
-import "../styles/customProperties.css"
+import "../styles/customProperties.css";
 import "../styles/global.css";
+import data from "../datas/entreprise.json";
+ const {title} = Astro.props;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content={data.metaDescription}>
+		<title>{`${data.entreprise}--${title}`}</title>
 	</head>
 	<body>
 		<slot />

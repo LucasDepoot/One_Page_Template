@@ -1,25 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import data from "../datas/header.json"
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from '../components/Hero.astro';
+import Presentation from '../components/Presentation.astro';
+import Service from '../components/Service.astro';
 ---
 
-<Layout>
+<Layout title="Accueil">
 	<header>
 		<Header />
+		<Hero />
 	</header>
-	<!-- <Welcome /> -->
+	<main>
+		<Presentation />
+		<Service />
+	</main>
 </Layout>
 <style>
 	header{
-		height: 75%;
+		height: 75vh;
+		max-height: 75vh;
 		background-position: center;
 		background-size: cover;
 		background-image: var(--picture-tall-background);
+	}
+	main{
+		padding-bottom: 4rem;
 	}
 	@media(max-width:750px){
 		header{

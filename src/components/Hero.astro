@@ -1,0 +1,37 @@
+---
+import data from "../datas/entreprise.json";
+---
+<section id="hero">
+    <h1>{data.entreprise}</h1>
+    <h2>{data.service}</h2>
+</section>
+<style>
+    section{
+        background: var(--color-background-header);
+        padding: 1rem;
+        position: absolute;
+        top:var(--hero-tall-top);
+        left:var(--hero-tall-left);
+        border-radius: 15px;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.4rem;
+        }
+        @media(max-width:750px){
+            section{
+                top:var(--hero-small-top);
+                width:80%;
+                left: var(--hero-small-left);
+                transform: translate(-50%, -50%);
+            }
+            h1{
+                font-size: 1.7rem;
+            }
+            h2{
+                font-size:1.2rem;
+            }
+        }
+</style>
