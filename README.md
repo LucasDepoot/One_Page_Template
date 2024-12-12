@@ -9,6 +9,10 @@
 
 #### Header
 ###### Modification of the template information
+
+env.example -> EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID
+
+
 cta.css -> cta-class
 
 

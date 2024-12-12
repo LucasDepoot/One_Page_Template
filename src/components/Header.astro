@@ -1,48 +1,41 @@
 ---
 import data from "../datas/entreprise.json";
+import Hero from "./Hero.astro";
 ---
-
-<section>
-    <div class="name">
-        <img loading="lazy" src={data.logo} alt={`Logo ${data.entreprise}`} width="120px" height="120px">
-        <a href="">{data.entreprise}</a>
-    </div>
-    <div class="contact">
-        <ul>
-            <li>
-                <img loading="lazy" src={data.mailImage} alt="Enveloppe" width="25px">
-                <a href={`mailto:${data.mail}`}>{data.mail}</a>
-            </li>
-            <li>
-                <img loading="lazy" src={data.phoneImage} alt="Telephone" width="25px">
-                <a href={`tel:${data.phone}`}>{data.phone}</a>
-            </li>
-            <li>
-                <ul class="social">
-                    {data.social.map((i)=>(
-                        <li>
-                            <a href={i.link}><img loading="lazy" src={i.image} alt="Réseaux sociaux" width="25px"/></a>
-                        </li>
-                    ))}
-                </ul>
-            </li>
-        </ul>
-    </div>
-</section>
-<nav class="navbar">
-    <ul>
-        <li><a href="#hero">Notre Entreprise</a></li>
-        <li><a href="">Nos Prestations</a></li>
-        <li><a href="">Nous contacter</a></li>
-    </ul>
-</nav>
-
+    <section>
+        <div class="name">
+            <img loading="lazy" src={data.logo} alt={`Logo ${data.entreprise}`} width="120px" height="120px">
+            <a href="">{data.entreprise}</a>
+        </div>
+        <div class="contact">
+            <ul>
+                <li>
+                    <img loading="lazy" src={data.mailImage} alt="Enveloppe" width="25px">
+                    <a href={`mailto:${data.mail}`}>{data.mail}</a>
+                </li>
+                <li>
+                    <img loading="lazy" src={data.phoneImage} alt="Telephone" width="25px">
+                    <a href={`tel:${data.phone}`}>{data.phone}</a>
+                </li>
+                <li>
+                    <ul class="social">
+                        {data.social.map((i)=>(
+                            <li>
+                                <a href={i.link}><img loading="lazy" src={i.image} alt="Réseaux sociaux" width="25px"/></a>
+                            </li>
+                        ))}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
 <style>
     section{
         background: var(--color-background-header);
         display: grid;
         grid-template-columns: repeat(3,1);
     }
+
     .name{
         grid-column: 1;
         padding: 1rem 1rem;
@@ -78,20 +71,7 @@ import data from "../datas/entreprise.json";
     .social>li>a{
         margin-right: 1rem;
     }
-    nav{
-        border-bottom: 1px solid black;
-        background: var(--color-background-header);
-    }
-    nav>ul{
-        display: flex;
-        background: var(--color-background-header);
-        justify-content: space-around;
-        padding: 0.5rem 0;
-    }
-    nav a{
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
+    
     @media(max-width:750px){
         section{
             display: flex;
@@ -111,9 +91,6 @@ import data from "../datas/entreprise.json";
         .contact{
             padding-bottom: 0;
             padding-top: 0;
-        }
-        nav a {
-            font-size: 1rem;
         }
     }
 </style>

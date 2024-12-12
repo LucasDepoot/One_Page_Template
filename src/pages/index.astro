@@ -1,35 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import Presentation from '../components/Presentation.astro';
 import Service from '../components/Service.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="Accueil">
-	<header>
-		<Header />
-		<Hero />
-	</header>
+	<Header />
+	<Nav />
+	<Hero />
 	<main>
 		<Presentation />
 		<Service />
 	</main>
+	<Contact />
 </Layout>
 <style>
-	header{
-		height: 75vh;
-		max-height: 75vh;
-		background-position: center;
-		background-size: cover;
-		background-image: var(--picture-tall-background);
-	}
+
 	main{
 		padding-bottom: 4rem;
-	}
-	@media(max-width:750px){
-		header{
-			background-image: var(--picture-small-background);
-		}
 	}
 </style>

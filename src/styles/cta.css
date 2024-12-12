@@ -3,3 +3,9 @@
   border-radius:20px;
   background: blanchedalmond;
 }
+.cta-card{
+  background: blanchedalmond;
+  border-radius: 15px;
+  margin: 0.5rem 0;
+  padding: 2px;
+}

@@ -1,0 +1,44 @@
+---
+import Form from "./Form";
+import data from "../datas/entreprise.json";
+---
+
+<section id="contact">
+    <p>Vous souhaitez obtenir un devis, des informations sur nos services, ou tout autre demande, contactez nous. Nous vous répondrons au plus vite.</p>
+    <p>Vous pouvez nous contacter directement par :</p>
+    <ul>
+        <li>Telephone : <a href={`tel:${data.phone}`}>{data.phone}</a></li>
+        <li>Mail : <a href={`mailto:${data.mail}`}>{data.mail}</a></li>
+    </ul>
+    <p>ou via ce formulaire de contact : </p>
+    <Form />
+</section>
+<style>
+    section{
+        text-align: center;
+        font-size: 1.3rem;
+        border-top: 1px solid var(--color-background-header);
+    }
+    p{
+        margin: 1rem;
+    }
+    ul{
+        background: var(--color-background-header);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.3rem;
+        border-radius: 10px;
+    }
+    li{
+        margin: 1rem 0;
+    }
+    li a {
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+    }
+    @media (max-width:750px){
+        section{
+            font-size: 1rem;
+        }
+    }
+</style>

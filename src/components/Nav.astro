@@ -1,0 +1,33 @@
+---
+
+---
+<nav class="navbar">
+    <ul>
+        <li><a href="#entreprise">Notre Entreprise</a></li>
+        <li><a href="#service">Nos Prestations</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+    </ul>
+</nav>
+<style>
+    nav{
+        position: sticky;
+        top: 0;
+        background: var(--color-background-header);
+        z-index: 1;
+    }
+    nav>ul{
+        display: flex;
+        background: var(--color-background-header);
+        justify-content: space-around;
+        padding: 0.5rem 0;
+    }
+    nav a{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    @media (max-width:750px){
+        nav a {
+                font-size: 1rem;
+            }
+    }
+</style>

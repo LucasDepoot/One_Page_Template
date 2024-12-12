@@ -1,7 +1,8 @@
 ---
 import data from "../datas/service.json";
+import Cta from "./Cta.astro";
 ---
-<section>
+<section id="service">
     <h2>Nos Prestations</h2>
     <div class="services">
         {data.map((i)=>(
@@ -9,28 +10,51 @@ import data from "../datas/service.json";
                 <img loading="lazy" src={i.image} alt={i.imageAlt} width="150px"/>
                 <h3>{i.title}</h3>
                 <p>{i.description}</p>
+                <Cta text="Obtenez un devis" style="cta-card"/>
             </div>
         ))}
     </div>
 </section>
 <style>
+    section{
+        padding-top: 2rem;
+    }
     .services{
         width: 80%;
         gap: 2rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
     .card{
         display: flex;
         flex-direction: column;
-        border: 1px solid slateblue;
         text-align: center;
         width: 20%;
-        padding: 2rem;
+        padding: 0.5rem 2rem;
+        font-size: 1.3rem;
+    }
+    h3{
+        margin-bottom: 0.75rem;
     }
     img{
-        margin: auto;
+        margin: 0 auto 1.5rem;
         border-radius: 50%;
+    }
+    @media(max-width:750px){
+        .services{
+            flex-direction: column;
+        }
+        .card{
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
     }
 </style>

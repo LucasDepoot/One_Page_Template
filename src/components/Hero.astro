@@ -1,37 +1,50 @@
 ---
 import data from "../datas/entreprise.json";
 ---
-<section id="hero">
-    <h1>{data.entreprise}</h1>
-    <h2>{data.service}</h2>
+<section >
+    <div class="hero-info">
+        <h1 id="entreprise">{data.entreprise}</h1>
+        <h2>{data.service}</h2>
+    </div>
 </section>
 <style>
     section{
-        background: var(--color-background-header);
-        padding: 1rem;
-        position: absolute;
-        top:var(--hero-tall-top);
-        left:var(--hero-tall-left);
-        border-radius: 15px;
+		height: 75vh;
+		max-height: 75vh;
+		background-position: center;
+		background-size: cover;
+		background-image: var(--picture-tall-background);    
         }
+        .hero-info{
+            background: var(--color-background-header);
+            padding: 1rem;
+            position: absolute;
+            top:var(--hero-tall-top);
+            left:var(--hero-tall-left);
+            border-radius: 15px;
+        }
+
         h1{
             font-size: 2rem;
         }
         h2{
             font-size: 1.4rem;
         }
-        @media(max-width:750px){
-            section{
-                top:var(--hero-small-top);
-                width:80%;
-                left: var(--hero-small-left);
-                transform: translate(-50%, -50%);
-            }
-            h1{
-                font-size: 1.7rem;
-            }
-            h2{
-                font-size:1.2rem;
-            }
+    @media(max-width:750px){
+        section{
+            background-image: var(--picture-small-background);
+	    }
+        .hero-info{
+            top:var(--hero-small-top);
+            width:80%;
+            left: var(--hero-small-left);
+            transform: translate(-50%, -50%);
         }
+        h1{
+            font-size: 1.7rem;
+        }
+        h2{
+            font-size:1.2rem;
+        }
+    }
 </style>
