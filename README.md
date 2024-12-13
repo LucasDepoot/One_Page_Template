@@ -10,16 +10,15 @@
 #### Header
 ###### Modification of the template information
 
-env.example -> EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID
+env.example -> Rename .env , complete informations
+
+customProperties.css -> Custom website style
 
 
-cta.css -> cta-class
+cta.css -> Custom Cta's
 
 
-customProperties.css -> picture-tall-background, picture-small-background, color-background-header, hero-tall-left , hero-tall-top, hero-small-left, hero-small-top
+public -> Picture,logo and Favicon
 
 
-public -> BackgroundTall, BackgroundSmall, Logo , Favicon
-
-
-entreprise.json -> Entreprise, Service, Logo, Mail, MailImage, MetaDescription, Phone, PhoneImage, SocialLinks, Presentation , PresentationAltImage, PresentationImage
+entreprise.json -> Complete informations about entreprise

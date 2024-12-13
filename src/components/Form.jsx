@@ -29,7 +29,6 @@ const Form =() => {
     const [isLoading,setIsLoading]=useState(false);
     
  const handleSendMail= (e)=>{
-
     e.preventDefault();
     if(
         formData.user_name.trim().length===0 ||
@@ -110,15 +109,16 @@ const Form =() => {
                     type="text"
                     id="phone"
                     name="user_phone"
-                    value={formData.user_name} 
+                    pattern="[0-9]{2}(\s?[0-9]{2}){4}"
+                    value={formData.user_phone} 
                     spellcheck={false}
-                    placeholder="Votre numéro"
+                    placeholder="06 01 02 03 04"
                     onChange={(e)=>{{setFormData({...formData, user_phone:e.target.value})}}}
                     required
                 />
             </div>
             <div>
-                <label htmlFor="subject">L'objet de votre message : <span>*</span></label>
+                <label htmlFor="subject"> Objet : <span>*</span></label>
                 <input
                     type="text"
                     id="subject"

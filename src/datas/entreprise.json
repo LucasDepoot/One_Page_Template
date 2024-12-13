@@ -1,13 +1,16 @@
 {
     "metaDescription":"lorem lorem",
+    "favicon":"/favicon.svg",
 
     "entreprise":"Nom d'entreprise",
-    "service":"Deneigeur | Fabricant de bonhomme de neige",
+    "service":"Service1| Service2| Service3",
     "logo":"/placeholder.jpg",
     "mail":"mail@entreprise.fr",
     "mailImage":"/envelope-line-icon.png",
     "phone":"06 06 06 06 06",
     "phoneImage":"/phone-line-icon.png",
+    "location":"1, Rue de l' entreprise",
+    "locationImage":"./pin-line-icon.png",
     "social": 
         [
             {
@@ -21,5 +24,6 @@
         ],
     "presentation": "Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.",
     "presentationImage":"/placeholder.jpg",
-    "presentationAltImage":"Description de l'image"
+    "presentationAltImage":"Entreprise",
+    "footer":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese."
 }

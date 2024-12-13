@@ -1,0 +1,35 @@
+---
+import data from "../datas/entreprise.json";
+---
+<footer>
+    <p>{data.footer}</p>
+    <div>
+        <img src={data.logo} alt={`Logo ${data.entreprise}`} width="80px">
+        <p>{data.entreprise}</p>
+        <a href="/mentions-legales">Mentions Legales</a>
+    </div>
+    <ul>
+        <li><a href="#entreprise">Notre Entreprise</a></li>
+        <li><a href="#service">Nos Prestations</a></li>
+        <li><a href="#contact">Nous Contacter</a></li>
+    </ul>
+</footer>
+<style>
+    footer{
+        margin-top: 2rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        background: var(--color-background-header);
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    ul{
+        text-align:right;
+    }
+</style>

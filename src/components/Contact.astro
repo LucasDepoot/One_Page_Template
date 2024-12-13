@@ -11,7 +11,7 @@ import data from "../datas/entreprise.json";
         <li>Mail : <a href={`mailto:${data.mail}`}>{data.mail}</a></li>
     </ul>
     <p>ou via ce formulaire de contact : </p>
-    <Form />
+    <Form client:load/>
 </section>
 <style>
     section{

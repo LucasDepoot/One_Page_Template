@@ -7,11 +7,13 @@
     },
     {
         "image":"/placeholder.jpg",
+        "imageAlt":"description",
         "title":"prestation 2",
         "description":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st"
     },
     {
         "image":"/placeholder.jpg",
+        "imageAlt":"description",
         "title":"prestation 3",
         "description":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st"
     }
