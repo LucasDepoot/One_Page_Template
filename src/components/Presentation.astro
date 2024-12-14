@@ -3,7 +3,7 @@ import data from "../datas/entreprise.json";
 import Cta from "./Cta.astro";
 ---
 <section>
-    <div>
+    <div class="elementToAnimate">
         <img loading="lazy" src={data.presentationImage} alt={data.presentationAltImage}>
         <p>{data.presentation}</p>
     </div>
@@ -29,7 +29,21 @@ import Cta from "./Cta.astro";
     .cta-container{
         margin: 4rem 0;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: var(--fontsize-text);
+    }
+    .animate {
+        animation: zoom-in-zoom-out 1s ease-in-out;    
+    }
+    @keyframes zoom-in-zoom-out {
+        0% {
+            scale: 100%;
+        }
+        50% {
+            scale: 110%;
+        }
+        100% {
+            scale: 100%;
+        }
     }
     @media(max-width:750px){
         section{

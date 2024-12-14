@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
+import data from "../datas/legal.json";
+import Footer from "../components/Footer.astro";
+---
+<Layout title="Mentions-Legales">
+    <Header />
+	<Nav />
+    <h1>Mentions légales</h1>
+    <p>
+      <a href="/">{data.site}</a> est édité par {data.editeur}, au nom de l'entreprise : {data.statut} {data.entreprise}, enregistrée en France sous le SIREN {data.siren}, et dont le siège social est situé à {data.adresse}.
+    </p>
+    <ul>
+      <li>Responsable de publication : {data.publication}</li>
+      <li>Numéro de téléphone : {data.telephone}</li>
+      <li>Adresse e-mail : <a href="mailto:{data.mail}">{data.mail}</a></li>
+    </ul>
+    
+    <h2>Hébergement</h2>
+    <p>
+      Le site est hébergé par <a href="{data.siteHebergeur}">{data.hebergeur}</a>, dont le siège social est situé au {data.siegeHebergeur}.
+    </p>
+    <p>Téléphone : {data.hebergeurTel}</p>
+    <p>E-mail : <a href="mailto:{data.hebergeurMail}">{data.hebergeurMail}</a></p>
+    
+    <h2>Propriété intellectuelle</h2>
+    <p>
+      L'ensemble des contenus présents sur <a href="/">{data.site}</a>, incluant, mais sans s'y limiter, les textes, les logos et les images, est la propriété exclusive de {data.entreprise}, et est protégé par les lois sur la propriété intellectuelle en vigueur.
+    </p>
+    <p>
+      Toute reproduction, distribution, modification ou utilisation sans autorisation préalable écrite de {data.editeur} est strictement interdite et peut entraîner des poursuites judiciaires.
+    </p>
+    <p>
+      Les contenus protégés par des licences libres, tels que certains logos ou images, restent la propriété de leurs auteurs respectifs et sont utilisés conformément aux termes de leurs licences.
+    </p>
+    
+    <h2>Liens externes</h2>
+    <p>
+      Ce site peut contenir des liens vers d'autres sites internet qui ne sont pas sous le contrôle de {data.editeur}. Nous déclinons toute responsabilité quant au contenu, à l'exactitude ou à la disponibilité de ces sites. <a href="/">{data.site}</a> ne saurait être tenu responsable des publications ou des activités de ces sites tiers.
+    </p>
+    <p>
+      Les utilisateurs naviguent sur ces sites tiers sous leur propre responsabilité, et {data.site} ne peut être tenu responsable de tout dommage ou préjudice résultant de leur utilisation.
+    </p>
+    
+    <h2>Responsabilité</h2>
+    <p>
+      <a href="/">{data.site}</a> s'efforce de maintenir les informations présentées à jour et exactes. Cependant, <a href="/">{data.site}</a> décline toute responsabilité en cas d'erreur, d'omission ou de préjudices résultant de l'utilisation de ces informations. Si vous remarquez une erreur ou une inexactitude, merci de nous contacter à l'adresse e-mail suivante : <a href="mailto:{data.mail}">{data.mail}</a>.
+    </p>
+    <p>
+      Les présentes mentions légales sont régies par le droit français. Tout litige relatif à leur interprétation ou à leur exécution sera soumis à la juridiction des tribunaux de {data.tribunal}.
+    </p>
+    
+    <h2>Protection des données personnelles</h2>
+    <p>
+      Pour en savoir plus sur la collecte, l'utilisation et la protection de vos données personnelles, veuillez consulter notre <a href="/politique-confidentialite">politique de confidentialité</a>.
+    </p>
+    <p>Dernière mise à jour : {data.dateMaj}</p>    
+    <Footer />
+</Layout>
+<style>
+    h1{
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    p{
+        width: 60%;
+        margin: 0.5rem auto;
+        font-size: var(--fontsize-text);
+    }
+    p a {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+    }
+    ul{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: var(--fontsize-text);
+    }
+    h2{
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    @media (max-width:750px){
+        h1{
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            width: 80%;
+            text-align: center;
+            font-size: 1rem;
+        }
+        ul{
+            font-size: 1rem;
+        }
+    }
+</style>

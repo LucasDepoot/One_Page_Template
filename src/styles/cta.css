@@ -1,11 +1,21 @@
 .cta-contact{
   padding: 1rem 3rem;
-  border-radius:20px;
-  background: blanchedalmond;
+  border: 2px solid var(--color-primary);
+  border-radius:var(--border-radius);
+  background: var(--color-primary);
 }
 .cta-card{
-  background: blanchedalmond;
-  border-radius: 15px;
+  background:var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
   margin: 0.5rem 0;
   padding: 2px;
+}
+.cta-contact:hover{
+  border: 2px solid var(--color-secondary);
+  color: var(--color-accent);
+}
+.cta-card:hover{
+  border: 2px solid var(--color-secondary);
+  color: var(--color-accent);
 }

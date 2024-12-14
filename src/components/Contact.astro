@@ -16,18 +16,20 @@ import data from "../datas/entreprise.json";
 <style>
     section{
         text-align: center;
-        font-size: 1.3rem;
-        border-top: 1px solid var(--color-background-header);
+        font-size: var(--fontsize-text);
+        border-top: 1px solid var(--color-primary);
     }
     p{
         margin: 1rem;
     }
     ul{
-        background: var(--color-background-header);
+        background: var(--color-primary);
         width: fit-content;
         margin: 0 auto;
-        padding: 0.3rem;
+        padding: 1rem;
         border-radius: 10px;
+        text-align: left;
+        border: 2px solid var(--color-accent);
     }
     li{
         margin: 1rem 0;
@@ -35,6 +37,9 @@ import data from "../datas/entreprise.json";
     li a {
         text-decoration: underline;
         text-underline-offset: 0.3rem;
+    }
+    li a:hover{
+        color: var(--color-secondary);
     }
     @media (max-width:750px){
         section{

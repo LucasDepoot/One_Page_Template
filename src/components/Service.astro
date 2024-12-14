@@ -7,7 +7,7 @@ import Cta from "./Cta.astro";
     <div class="services">
         {data.map((i)=>(
             <div class="card">
-                <img loading="lazy" src={i.image} alt={i.imageAlt} width="150px"/>
+                <img class="elementToAnimate" loading="lazy" src={i.image} alt={i.imageAlt} width="150px"/>
                 <h3>{i.title}</h3>
                 <p>{i.description}</p>
                 <Cta text="Obtenez un devis" style="cta-card"/>
@@ -38,7 +38,7 @@ import Cta from "./Cta.astro";
         text-align: center;
         width: 20%;
         padding: 0.5rem 2rem;
-        font-size: 1.3rem;
+        font-size: var(--fontsize-text);
     }
     h3{
         margin-bottom: 0.75rem;
@@ -46,6 +46,25 @@ import Cta from "./Cta.astro";
     img{
         margin: 0 auto 1.5rem;
         border-radius: 50%;
+    }
+    .animate {
+        animation: zoom-in-zoom-out 1s ease-in-out;    
+    }
+    @keyframes zoom-in-zoom-out {
+        0% {
+            scale: 100%;
+        }
+        50% {
+            scale: 110%;
+        }
+        100% {
+            scale: 100%;
+        }
+    }
+    @media(max-width:1250px){
+        .card{
+            width: 40%;
+        }
     }
     @media(max-width:750px){
         .services{

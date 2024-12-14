@@ -1,9 +1,16 @@
 :root{
-    --color-background-header:blanchedalmond;
+    --color-primary:blanchedalmond;
+    --color-secondary:rgb(185, 139, 70);
+    --color-accent:rgb(42, 180, 127);
+    --color-text-dark:rgb(207, 68, 68);
+    --color-text-light:rgb(228, 223, 223);
+    --color-background:rgb(228, 223, 223);
+    --border-radius:15px;
+    --fontsize-text:1.3rem;
     --picture-tall-background:url('/backgroundPlaceholder.jpg');
     --picture-small-background:url('/backgroundPlaceholder.jpg');
     --hero-tall-top:75vh;
-    --hero-tall-left:65vw;
+    --hero-tall-left:60vw;
     --hero-small-top:88vh;
     --hero-small-left:50%;
 }

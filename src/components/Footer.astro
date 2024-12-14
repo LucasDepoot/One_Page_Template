@@ -1,17 +1,21 @@
 ---
 import data from "../datas/entreprise.json";
+const url = new URL(Astro.request.url);
+const slug =url.pathname;
+const path = slug === "/mentions-legales" || slug === "/politique-confidentialite" ? "/" : "";  
 ---
 <footer>
     <p>{data.footer}</p>
     <div>
         <img src={data.logo} alt={`Logo ${data.entreprise}`} width="80px">
-        <p>{data.entreprise}</p>
-        <a href="/mentions-legales">Mentions Legales</a>
+        <p class="name">{data.entreprise}</p>
+        <a href="/mentions-legales">Mentions légales</a>
+        <p class="droits">@ 2025 Tous droits réservés </p>
     </div>
     <ul>
-        <li><a href="#entreprise">Notre Entreprise</a></li>
-        <li><a href="#service">Nos Prestations</a></li>
-        <li><a href="#contact">Nous Contacter</a></li>
+        <li><a href=`${path}#entreprise`>Notre Entreprise </a></li>
+        <li><a href=`${path}#service`>Nos Prestations</a></li>
+        <li><a href=`${path}#contact`>Nous Contacter</a></li>
     </ul>
 </footer>
 <style>
@@ -21,15 +25,48 @@ import data from "../datas/entreprise.json";
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 1rem;
-        background: var(--color-background-header);
+        background: var(--color-primary);
     }
     div{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+    }
+    .name{
+        margin-top: 1rem;
+        font-size: var(--fontsize-text);
+    }
+    .droits{
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+    div>a{
+        margin-top: 2rem;
     }
     ul{
         text-align:right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: var(--fontsize-text);
+    }
+    li{
+        margin-top: 1rem;
+    }
+    a:hover{
+        color: var(--color-secondary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    @media (max-width:750px){
+        footer{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr 1fr;
+        }
+        ul{
+            grid-row-start: 2;
+            text-align:center;
+        }
     }
 </style>

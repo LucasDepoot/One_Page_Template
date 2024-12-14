@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import data from "../datas/legal.json";
+---
+<Layout title="Politique de confidentialité">
+    <Header />
+    <Nav />
+    <h1>Politique de confidentialité</h1>
+    <p>Cette politique de confidentialité décrit comment <a href="/">{data.site}</a> collecte, utilise et protège les informations personnelles que vous pouvez fournir lors de votre utilisation du site.</p>
+    <h2>Collecte d'informations</h2>
+    <p><a href="/">{data.site}</a> ne collecte aucune information personnelle sans votre consentement. Les seules données collectées sont celles que vous nous fournissez via le formulaire de contact.</p>
+    <h2>Utilisation des informations</h2>
+    <p>Les informations que vous nous fournissez seront utilisées afin de répondre à votre demande et pourront être conservées pendant le temps nécessaire au traitement de celle-ci, et plus longtemps si cela favorise un meilleur suivi de vos demandes. <a href="/">{data.site}</a> n'utilisera pas vos informations à des fins de marketing sans votre consentement explicite.</p>
+    <p><a href="/">{data.site}</a> ne vend ni ne partage vos informations personnelles avec des tiers, sauf en cas d'obligation légale.</p>
+    <h2>Sécurité des informations</h2>
+    <p><a href="/">{data.site}</a> met en place des mesures de sécurité appropriées pour protéger vos informations personnelles contre tout accès non autorisé. Cependant, veuillez noter qu'aucune méthode de transmission ou de stockage de données n'est infaillible, et nous ne pouvons garantir la sécurité absolue de vos informations.</p> 
+    <h2>Cookies</h2>
+    <p>Un cookie est un fichier texte déposé sur votre ordinateur lors de la visite d'un site ou de la consultation d'une publicité. Il a pour but de collecter des informations relatives à votre navigation et de vous adresser des services adaptés à votre terminal (ordinateur, mobile ou tablette).</p>
+    <p><a href="/">{data.site}</a> ne collecte aucun cookie, aucune information personnelle ne sera collectée à des fins de suivi sans votre consentement. Si une fonctionnalité nécessite l'utilisation de cookies, vous serez averti par une notification lors de votre arrivée sur notre site, afin d'y exprimer votre consentement.</p>
+    <h2>Droit d'accès, de rectification et de suppression</h2>
+    <p>Conformément aux lois applicables sur la protection des données, vous avez le droit d'accéder, de rectifier ou de supprimer les informations personnelles que <a href="/">{data.site}</a> détient. Si vous souhaitez exercer ces droits, veuillez contacter le responsable de la protection des données, {data.editeur}, à l'adresse e-mail suivante : {data.mail}.</p>   
+    <h2>Modifications de la politique de confidentialité</h2>
+    <p><a href="/">{data.site}</a> se réserve le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page. Nous vous encourageons à consulter régulièrement cette page pour rester informé(e) des éventuelles modifications.</p>
+    <p>Si vous avez des questions concernant notre politique de confidentialité, veuillez nous contacter à l'adresse e-mail suivante : {data.mail}.</p>    
+    <Footer />
+</Layout>
+<style>
+    h1{
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    p{
+        width: 60%;
+        margin: 0.5rem auto;
+        font-size: 1.3rem;
+    }
+    p a {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+    }
+    ul{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: var(--fontsize-text);
+    }
+    h2{
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    @media (max-width:750px){
+        h1{
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            width: 80%;
+            text-align: center;
+            font-size: 1rem;
+        }
+        ul{
+            font-size: 1rem;
+        }
+    }
+</style>

@@ -1,0 +1,19 @@
+{
+    "site":"nomdusite",
+    "siteLink":"https://nomdusite.fr",
+    "editeur":"nomduchefEntreprise",
+    "entreprise":"nomEntreprise",
+    "statut":"statutEntrprise",
+    "siren":"123123123",
+    "adresse":"1, Rue de l'entreprise 01000 Ville",
+    "publication":"nomduchefEntreprise",
+    "telephone":"06 01 02 03 04",
+    "mail":"mail@mail.fr",
+    "hebergeur":"nomhebergeur",
+    "siteHebergeur":"https://siteHebergeur.fr",
+    "siegeHebergeur":"1 rue de l'hebergement 33000 Bordeaux",
+    "hebergeurTel":"01 02 03 04 05",
+    "hebergeurMail":"hebergeur@heberge.fr",
+    "tribunal":"villeEntreprise",
+    "dateMaj": "01/01/2025"
+}

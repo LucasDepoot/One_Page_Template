@@ -1,29 +1,36 @@
 ---
-
+const url = new URL(Astro.request.url);
+const slug =url.pathname;
+const path = slug === "/mentions-legales" || slug === "/politique-confidentialite" ? "/" : "";  
 ---
 <nav class="navbar">
     <ul>
-        <li><a href="#entreprise">Notre Entreprise</a></li>
-        <li><a href="#service">Nos Prestations</a></li>
-        <li><a href="#contact">Nous Contacter</a></li>
+        <li><a href=`${path}#entreprise`>Notre Entreprise </a></li>
+        <li><a href=`${path}#service`>Nos Prestations</a></li>
+        <li><a href=`${path}#contact`>Nous Contacter</a></li>
     </ul>
 </nav>
 <style>
     nav{
         position: sticky;
         top: 0;
-        background: var(--color-background-header);
+        background: var(--color-primary);
         z-index: 1;
     }
     nav>ul{
         display: flex;
-        background: var(--color-background-header);
+        background: var(--color-primary);
         justify-content: space-around;
         padding: 0.5rem 0;
     }
     nav a{
-        font-size: 1.2rem;
+        font-size: var(--fontsize-text);
         font-weight: 600;
+    }
+    nav a:hover{
+        color: var(--color-secondary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
     }
     @media (max-width:750px){
         nav a {
