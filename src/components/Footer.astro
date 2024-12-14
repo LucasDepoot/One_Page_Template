@@ -7,7 +7,7 @@ const path = slug === "/mentions-legales" || slug === "/politique-confidentialit
 <footer>
     <p>{data.footer}</p>
     <div>
-        <img src={data.logo} alt={`Logo ${data.entreprise}`} width="80px">
+        <img loading="lazy" src={data.logo} alt={`Logo ${data.entreprise}`} width="80px">
         <p class="name">{data.entreprise}</p>
         <a href="/mentions-legales">Mentions légales</a>
         <p class="droits">@ 2025 Tous droits réservés </p>
@@ -32,6 +32,9 @@ const path = slug === "/mentions-legales" || slug === "/politique-confidentialit
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    img{
+        aspect-ratio: 1/1;
     }
     .name{
         margin-top: 1rem;

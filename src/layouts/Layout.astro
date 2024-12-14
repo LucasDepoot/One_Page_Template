@@ -12,6 +12,8 @@ import data from "../datas/entreprise.json";
 		<link rel="icon" type="image/svg+xml" href={data.favicon} />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={data.metaDescription}>
+		<meta name="keywords" content={data.keyword}/>
+		<meta name="robots" content="index, follow" />
 		<title>{`${data.entreprise}--${title}`}</title>
 	</head>
 	<body>
