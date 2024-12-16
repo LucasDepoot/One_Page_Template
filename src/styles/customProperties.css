@@ -5,6 +5,8 @@
     --color-text-dark:rgb(207, 68, 68);
     --color-text-light:rgb(228, 223, 223);
     --color-background:rgb(228, 223, 223);
+    --font-title:"someFonts","someFonts";
+    --font-text:"someFonts","someFonts";
     --border-radius:15px;
     --fontsize-text:1.3rem;
     --picture-tall-background:url('/backgroundPlaceholder.jpg');
