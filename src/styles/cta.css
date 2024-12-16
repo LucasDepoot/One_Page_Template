@@ -5,7 +5,7 @@
   color: #FCFDF9;
 }
 .cta-card{
-  background:var(--color-secondary);
+  background:var(--color-primary);
   border-radius: var(--border-radius);
   margin: 0.5rem 0;
   padding: 2px;
