@@ -43,4 +43,17 @@ input, button, textarea {
 button {
   cursor: pointer;
 }
-
+.animate {
+  animation: zoom-in-zoom-out 1s ease-in-out;    
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+      scale: 100%;
+  }
+  50% {
+      scale: 110%;
+  }
+  100% {
+      scale: 100%;
+  }
+}
