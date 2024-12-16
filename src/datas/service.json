@@ -1,20 +1,20 @@
 [
     {
-        "image":"/placeholder.jpg",
-        "imageAlt":"description",
-        "title":"prestation 1",
-        "description":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st"
+        "image":"/Installation.webp",
+        "imageAlt":"Tableau électrique",
+        "title":"Énergies Renouvelables",
+        "description":["Installation de systèmes électriques ","Mise en conformité et mise aux normes électriques ","Remplacement de tableaux électriques","Dépannage électrique"]
     },
     {
-        "image":"/placeholder.jpg",
-        "imageAlt":"description",
-        "title":"prestation 2",
-        "description":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st"
+        "image":"/solarPanel.webp",
+        "imageAlt":"Panneaux solaires photovoltaïques",
+        "title":" Énergies renouvelables",
+        "description":["Installation de panneaux solaires photovoltaïques","Maintenance et entretien des panneaux solaires","Installation d'éoliennes domestiques","Installation de bornes de recharge pour véhicules électriques"]
     },
     {
-        "image":"/placeholder.jpg",
-        "imageAlt":"description",
-        "title":"prestation 3",
-        "description":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st"
+        "image":"/Domotique.webp",
+        "imageAlt":"Systeme de controle domotique",
+        "title":"Domotique",
+        "description":["Installation de systèmes domotiques","Systèmes de sécurité connectés","Gestion de l’énergie","Systèmes audio/vidéo intégrés"]
     }
 ]

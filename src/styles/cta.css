@@ -1,21 +1,21 @@
 .cta-contact{
   padding: 1rem 3rem;
-  border: 2px solid var(--color-primary);
   border-radius:var(--border-radius);
-  background: var(--color-primary);
+  background: var(--color-background-linear);
+  color: #FCFDF9;
 }
 .cta-card{
-  background:var(--color-primary);
-  border: 2px solid var(--color-primary);
+  background:var(--color-secondary);
   border-radius: var(--border-radius);
   margin: 0.5rem 0;
   padding: 2px;
+  color: var(--color-background);
 }
 .cta-contact:hover{
-  border: 2px solid var(--color-secondary);
   color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .cta-card:hover{
-  border: 2px solid var(--color-secondary);
   color: var(--color-accent);
 }

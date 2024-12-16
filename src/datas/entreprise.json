@@ -1,16 +1,17 @@
 {
-    "metaDescription":"lorem lorem",
-    "favicon":"/favicon.svg",
-    "keyword":"entreprise, service, contact",
+    "metaDescription":"Découvrez Ampère Service, votre expert en solutions électriques. Nous offrons des services fiables et professionnels pour tous vos besoins en électricité, que ce soit pour des installations résidentielles, commerciales ou industrielles. Contactez-nous dès aujourd'hui pour une consultation gratuite et laissez-nous illuminer votre projet avec notre expertise et notre savoir-faire.",
+    "favicon":"/favicon.png",
+    "keyword":"entreprise, service, contact, électricien, électrique, installation, dépannage, résidentiel, commercial, sécurité, énergie",
 
-    "entreprise":"Nom d'entreprise",
-    "service":"Service1| Service2| Service3",
-    "logo":"/placeholder.jpg",
-    "mail":"mail@entreprise.fr",
+    "entreprise":"Ampère Services",
+    "siren": "123 123 123 123",
+    "service":"Installation Électrique, Énergies Renouvelables, Domotique",
+    "logo":"/LogoElectrique.webp",
+    "mail":"contact@amperservice.fr",
     "mailImage":"/envelope-line-icon.png",
-    "phone":"06 06 06 06 06",
+    "phone":"06 05 04 03 02",
     "phoneImage":"/phone-line-icon.png",
-    "location":"1, Rue de l' entreprise",
+    "location":"1, Rue du voltmetre 75000 Paris",
     "locationImage":"./pin-line-icon.png",
     "social": 
         [
@@ -23,8 +24,8 @@
                 "image":"./facebook-icon.png"
             }
         ],
-    "presentation": "Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.",
-    "presentationImage":"/placeholder.jpg",
-    "presentationAltImage":"Entreprise",
-    "footer":"Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese.Jarlsberg brie fondue. Red leicester who moved my cheese brie swiss cow brie cottage cheese blue castello. Bavarian bergkase croque monsieur stinking bishop brie fondue rubber cheese halloumi st. agur blue cheese. Cut the cheese melted cheese."
+    "presentation": "Chez Ampère Service, nous sommes passionnés par l'innovation et l'excellence. Spécialisés dans l'installation électrique, les énergies renouvelables et la domotique, nous offrons des solutions sur mesure pour répondre à tous vos besoins électriques. Que vous soyez un particulier ou une entreprise, nous mettons notre expertise à votre service pour des installations fiables, sécurisées et économes en énergie. Basés au cœur de Paris, nous intervenons rapidement et efficacement dans toute la région parisienne. Notre équipe de techniciens qualifiés est à votre disposition pour des projets de toutes envergures, qu'il s'agisse de l'installation d'un nouveau système électrique, de la mise en place de panneaux solaires ou de l'intégration de solutions de domotique pour une maison intelligente.",
+    "presentationImage":"/electrician.webp",
+    "presentationAltImage":"Electricien d'Amper service",
+    "footer":"AmpèreService : Experts en Installation Électrique, Énergie Renouvelable et Domotique à Paris et ses environs. Contactez-nous pour une consultation gratuite et découvrez notre expertise, nos solutions personnalisées et notre service client exceptionnel."
 }

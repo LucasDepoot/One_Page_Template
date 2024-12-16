@@ -7,8 +7,13 @@ import data from "../datas/entreprise.json";
     <p>Vous souhaitez obtenir un devis, des informations sur nos services, ou tout autre demande, contactez nous. Nous vous répondrons au plus vite.</p>
     <p>Vous pouvez nous contacter directement par :</p>
     <ul>
-        <li>Telephone : <a href={`tel:${data.phone}`}>{data.phone}</a></li>
-        <li>Mail : <a href={`mailto:${data.mail}`}>{data.mail}</a></li>
+        <li>
+            <img loading="lazy" src={data.phoneImage} alt="Telephone" width="30px">
+            Telephone : 
+            <a href={`tel:${data.phone}`}>{data.phone}</a></li>
+        <li>
+            <img loading="lazy" src={data.mailImage} alt="Enveloppe" width="30px">
+            Mail : <a href={`mailto:${data.mail}`}>{data.mail}</a></li>
     </ul>
     <p>ou via ce formulaire de contact : </p>
     <Form client:load/>
@@ -17,29 +22,39 @@ import data from "../datas/entreprise.json";
     section{
         text-align: center;
         font-size: var(--fontsize-text);
-        border-top: 1px solid var(--color-primary);
+        border-top: 50px solid var(--color-primary);
     }
     p{
         margin: 1rem;
     }
     ul{
-        background: var(--color-primary);
+        background: var(--color-secondary);
+        color: var(--color-background);
         width: fit-content;
         margin: 0 auto;
         padding: 1rem;
         border-radius: 10px;
         text-align: left;
-        border: 2px solid var(--color-accent);
+        border: 2px solid var(--color-primary);
     }
     li{
+        display: flex;
+        align-items: center;
         margin: 1rem 0;
     }
+    li img{
+        background: var(--color-background);
+        padding: 0.3rem;
+        margin-right: 0.5rem;
+        border-radius: 10px;
+    }
     li a {
+        margin-left: 0.5rem;
         text-decoration: underline;
         text-underline-offset: 0.3rem;
     }
     li a:hover{
-        color: var(--color-secondary);
+        color: var(--color-primary);
     }
     @media (max-width:750px){
         section{

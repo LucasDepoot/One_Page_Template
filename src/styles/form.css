@@ -11,23 +11,22 @@ label{
     font-size: var(--fontsize-text);
 }
 input,textarea{
-    border:2px solid var(--color-primary);
+    border:2px solid var(--color-secondary);
     border-radius: var(--border-radius);
     width: 60%;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
     padding: 5px 1rem;
     font-size: 1.2rem;
     outline: none;
 }
 form button{
-    border: 2px solid var(--color-primary);
     border-radius: var(--border-radius);
     padding: 0.2rem 2rem;
     border-width:2px;
-    background: var( --color-primary);
+    background: var( --color-background-linear-inverse);
     width: 20%;
     margin: 0.5rem auto;
-    color:var(--color-text-dark)
+    color:var(--color-background)
     }
 .error-message{
     color: red;
@@ -42,14 +41,13 @@ form button{
     text-underline-offset: 0.2rem;   
 }
 textarea:focus-visible{
-    border-color: var(--color-accent);
+    border-color: var(--color-primary);
 }
 input:focus{
-    border-color: var(--color-accent);
+    border-color: var(--color-primary);
 }
 form button:hover{
-    border: 2px solid var(--color-secondary);
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 .loader {
     margin: 1rem auto;

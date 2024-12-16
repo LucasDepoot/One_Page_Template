@@ -1,18 +1,21 @@
 :root{
-    --color-primary:blanchedalmond;
-    --color-secondary:rgb(185, 139, 70);
-    --color-accent:rgb(42, 180, 127);
-    --color-text-dark:rgb(207, 68, 68);
-    --color-text-light:rgb(228, 223, 223);
-    --color-background:rgb(228, 223, 223);
+    --color-primary:#4CD7FE;
+    --color-secondary:#093f68;
+    --color-accent:#A7F051;
+    --color-text-dark:#093f68;
+    --color-text-light:#4CD7FE;
+    --color-background:#FCFDF9;
+    --color-background-linear:linear-gradient(90deg, rgba(9,63,104,1) 0%, rgb(62, 151, 172) 50%, rgba(9,63,104,1) 100%);
+    --color-background-linear-inverse:linear-gradient(90deg,rgb(62, 151, 172)0%, rgba(9,63,104,1) 50%, rgb(62, 151, 172) 100%);
+    --color-background-transparent:#fcfdf9b4;
     --font-title:"someFonts","someFonts";
     --font-text:"someFonts","someFonts";
     --border-radius:15px;
     --fontsize-text:1.3rem;
-    --picture-tall-background:url('/backgroundPlaceholder.jpg');
-    --picture-small-background:url('/backgroundPlaceholder.jpg');
+    --picture-tall-background:url('/tool.webp');
+    --picture-small-background:url('/tool-small.webp');
     --hero-tall-top:75vh;
-    --hero-tall-left:60vw;
-    --hero-small-top:88vh;
+    --hero-tall-left:50vw;
+    --hero-small-top:95vh;
     --hero-small-left:50%;
 }
