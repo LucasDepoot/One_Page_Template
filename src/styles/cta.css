@@ -8,8 +8,9 @@
   background:var(--color-primary);
   border-radius: var(--border-radius);
   margin: 0.5rem 0;
-  padding: 2px;
+  padding: 0.2rem 2rem;
   color: var(--color-background);
+  text-align: center;
 }
 .cta-contact:hover{
   color: var(--color-accent);
